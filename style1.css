@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css?family=Itim');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body{
+	background-color: blue;
+	text-align: center;
+	font-family: 'Permanent Marker', sans-serif;
+	color: orange;
+}
+
+
+
+p{
+	
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-decoration: blink;
+}
+
+
+
+
+ul{
+	transition: all 1s ease-in-out;
+	text-align: center;	
+	list-style-type: none;
+    color: orange;
+    font-size: 40px;
+    background: orange;
+    border-radius: 100px;
+    margin-top:40px;
+}
+
+ul:hover {transform: scale(1.5);  }
+
+h1{
+	font-size: 5em;
+	text-transform: uppercase;
+
+}
+
+h2{
+	font-size: 40px;
+}
+
+h3{
+	margin-top: -50px;
+	margin-bottom: 60px;
+	font-size: 30px;
+}
