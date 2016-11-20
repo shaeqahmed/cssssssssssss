@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@keyframes dash {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2400;
+  }
+}
+
+body {
+margin: 0px;
+//overflow: hidden;
+}
+
+img {
+    
+    width: 80%;
+
+}
+
+.fab {
+    width: 100%;
+    display: inline-block;
+    margin-top: 30vh;
+    height:100px;
+    border:none;
+    font-size:4vmin;
+    padding:0px;
+    color:white;
+    background-color:SteelBlue;
+    border-radius: 50%;
+    border-image-width: 0 0 0 0;                      
+    width: 5vw;
+    height: 5vw;
+    z-index: 100;
+    -webkit-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .4);
+       -moz-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .4);
+            box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .4);
+}
+
+.b {
+    width: 100%;
+    margin-top: 23vh;
+    height:100px;
+    border:none;
+    font-size:4vmin;
+    padding:0px;
+    color:black;
+    background-color:lightGray;
+                      
+    width: 5vw;
+    height: 5vw;
+    z-index: 100;
+   
+}
+
+
+
+
+
+.img-shadow {
+    margin-top: 37vh;
+    margin-left: 23%;
+    position: relative;
+    max-width: 100%;
+    float: left;
+    }
+   
+.desc{
+    margin-top: 5px;
+    text-align:center; font-size:1.5vw; color: #4c5760;
+}
+.desc1{
+    margin-top: 5px;
+    text-align:center; font-size:1.5vw; color: #b0c4de;
+}
+.desc2{
+    margin-top: 5px;
+    text-align:center; font-size:1.5vw; color: #93a8ac;
+}
+    .img-shadow::before {
+        
+        width: 80%;
+        height: 72%;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: inset 0 19px 13px rgba(0,0,0,.4);
+        -moz-box-shadow: inset 0 19px 13px rgba(0,0,0,.4);
+        -webkit-box-shadow: inset 0 -18% 13px rgba(0,0,0,.4)
+       } 
+       
+.img-shadow img {
+    float: left;
+    } 
+
+.currentLayer{
+  stroke-dasharray: 2400;
+  stroke-dashoffset: 2400;
+  animation: dash 5s cubic-bezier(.35,.56,.97,.45) infinite;
+  animation-delay: .55s;
+}
+
+
+
+.container {
+    display: flex;
+    margin: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+    //padding: 10px;
+    font-size: 3vw;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+
+.column {
+    flex: 1; 
+    padding: 10px;
+    padding-top: 17px;  
+}
+
+.column-one {
+    background:#b0c4de;
+    
+}
+.column-two {
+    background:#93a8ac;
+}
+.column-three {
+    
+    background:#4c5760;
+}
