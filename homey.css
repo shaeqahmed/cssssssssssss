@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+
+
 @keyframes dash {
   50% {
     stroke-dashoffset: 0;
@@ -10,8 +12,10 @@
 }
 
 body {
-margin: 0px;
-//overflow: hidden;
+    margin: 0px;
+    overflow: hidden;
+    background-image: url("bg.png");
+    background-repeat: repeat;
 }
 
 img {
@@ -21,6 +25,7 @@ img {
 }
 
 .fab {
+    animation-delay: 3s;
     width: 100%;
     display: inline-block;
     margin-top: 30vh;
@@ -41,6 +46,7 @@ img {
 }
 
 .b {
+    animation-delay: 2.33s;
     width: 100%;
     margin-top: 23vh;
     height:100px;
@@ -66,6 +72,7 @@ img {
     position: relative;
     max-width: 100%;
     float: left;
+    z-index: 100;
     }
    
 .desc{
@@ -97,13 +104,17 @@ img {
        
 .img-shadow img {
     float: left;
+    z-index: -1;
+    position: relative;
+    animation-delay: 1.66s;
+    //animation-iteration-count: infinite;
     } 
 
 .currentLayer{
   stroke-dasharray: 2400;
   stroke-dashoffset: 2400;
   animation: dash 5s cubic-bezier(.35,.56,.97,.45) infinite;
-  animation-delay: .55s;
+  animation-delay: 3.66s;
 }
 
 
@@ -119,6 +130,7 @@ img {
     color: white;
     text-align: center;
     font-weight: 700;
+
 }
 
 .column {
@@ -129,9 +141,11 @@ img {
 
 .column-one {
     background:#b0c4de;
+
     
 }
 .column-two {
+    animation-delay: .66s;
     background:#93a8ac;
 }
 .column-three {
