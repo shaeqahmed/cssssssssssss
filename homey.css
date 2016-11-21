@@ -2,6 +2,15 @@
 
 
 
+@-webkit-keyframes dash {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2400;
+  }
+}
+
 @keyframes dash {
   50% {
     stroke-dashoffset: 0;
@@ -113,8 +122,16 @@ img {
 .currentLayer{
   stroke-dasharray: 2400;
   stroke-dashoffset: 2400;
-  animation: dash 5s cubic-bezier(.35,.56,.97,.45) infinite;
-  animation-delay: 3.66s;
+  -webkit-animation: dash 5s cubic-bezier(.35,.56,.97,.45) infinite;
+          animation: dash 5s cubic-bezier(.35,.56,.97,.45) infinite;
+  -webkit-animation-delay: 3.66s;
+          animation-delay: 3.66s;
+}
+
+@-moz-document url-prefix() { 
+  svg {
+     margin-top: 30vh;
+  }
 }
 
 
