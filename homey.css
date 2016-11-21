@@ -128,11 +128,11 @@ img {
           animation-delay: 3.66s;
 }
 
-@-moz-document url-prefix() { 
-  svg {
-     margin-top: 30vh;
+svg {
+    position: relative;
+    top: 25vh;
   }
-}
+
 
 
 
